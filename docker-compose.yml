@@ -1,0 +1,7 @@
+services:
+  my-first-server:
+    image: nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - C:\Users\rishi\learning-lab\my-website:/usr/share/nginx/html
