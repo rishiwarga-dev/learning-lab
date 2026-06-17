@@ -5,3 +5,9 @@ services:
       - "8080:80"
     volumes:
       - C:\Users\rishi\learning-lab\my-website:/usr/share/nginx/html
+  database:
+    image: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
